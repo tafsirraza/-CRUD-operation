@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple CRUD App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Enhanced CRUD App</h1>
+    <div id="auth-container">
+        <form id="auth-form">
+            <input type="text" id="username" placeholder="Username">
+            <input type="password" id="password" placeholder="Password">
+            <button type="submit" id="login-btn">Login</button>
+            <button type="button" id="logout-btn" style="display:none;">Logout</button>
+        </form>
+    </div>
+    <div id="crud-container" style="display:none;">
+        <form id="crud-form">
+            <input type="text" id="item" placeholder="Enter item">
+            <button type="submit" id="add-btn">Add Item</button>
+        </form>
+        <ul id="item-list"></ul>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
